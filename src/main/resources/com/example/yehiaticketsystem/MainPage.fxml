@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="472.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yehiaticketsystem.MainPage">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://images.unsplash.com/photo-1556624651-1f527cdf6508?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1287&amp;q=80https://images.unsplash.com/photo-1556624651-1f527cdf6508?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1287&amp;q=80" />
+         </image>
+         <effect>
+            <BoxBlur iterations="3" />
+         </effect>
+      </ImageView>
+      <ComboBox fx:id="destinationComboBox" layoutX="159.0" layoutY="290.0" prefWidth="150.0" promptText="Choose Here" style="-fx-background-color: white;" />
+      <Label layoutX="147.0" layoutY="244.0" text="Choose Your Destination" textAlignment="CENTER" textFill="RED" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="108.0" layoutY="128.0" text="Plan Your Trip Now" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6199524940617578" endY="1.0" startX="0.3847980997624703">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.7099537253379822" blue="0.17129629850387573" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="0.7099537253379822" blue="0.17129629850387573" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9832214765100671">
+                     <color>
+                        <Color red="0.6800000071525574" green="0.26898378133773804" blue="0.08839999884366989" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6800000071525574" green="0.26898378133773804" blue="0.08839999884366989" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7368420958518982" green="0.6589506268501282" blue="0.2694931626319885" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ComboBox fx:id="arrivalComboBox" layoutX="160.0" layoutY="400.0" prefWidth="150.0" promptText="Choose Here" style="-fx-background-color: white;" />
+      <Label layoutX="163.0" layoutY="354.0" text="Choose Your Arrival" textAlignment="CENTER" textFill="RED" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="bookButton" alignment="CENTER" layoutX="182.0" layoutY="602.0" mnemonicParsing="false" onAction="#bookButtonOnAction" style="-fx-background-color: none; -fx-border-color: red; -fx-border-radius: 0.3em;" text="Book Now" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow radius="7.0525" width="9.21">
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ComboBox fx:id="numOfSeatsComboBox" layoutX="159.0" layoutY="500.0" prefWidth="150.0" promptText="Choose Here" style="-fx-background-color: white;" />
+      <Label layoutX="176.0" layoutY="458.0" text="Number of Seats" textAlignment="CENTER" textFill="RED" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.22893483936786652" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="142.0" layoutY="687.0" text="Created By: Yehia Sharawy - 20100519" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="labelMessage" alignment="CENTER" layoutX="114.0" layoutY="188.0" prefHeight="17.0" prefWidth="238.0" textAlignment="CENTER" textFill="#00ed83" />
+   </children>
+</Pane>

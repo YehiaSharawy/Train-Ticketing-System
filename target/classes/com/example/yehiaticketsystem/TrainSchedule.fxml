@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yehiaticketsystem.TrainSchedule">
+   <children>
+      <TableView fx:id="trainTableView" layoutX="30.0" layoutY="116.0" prefHeight="442.0" prefWidth="1020.0" style="-fx-background-color: #F75656; -fx-border-color: black; -fx-border-radius: 0.3em;">
+        <columns>
+          <TableColumn fx:id="departureLocationTableColumn" prefWidth="253.0" style="-fx-background-color: #E37272;" text="Departure Location" />
+            <TableColumn fx:id="departureTimeTableColumn" minWidth="0.0" prefWidth="224.0" style="-fx-background-color: #E37272;" text="Departure Time" />
+            <TableColumn fx:id="arrivalLocationTableColumn" prefWidth="283.0" style="-fx-background-color: #E37272;" text="Arrival Location" />
+            <TableColumn fx:id="arrivalTimeTableColumn" prefWidth="258.0" style="-fx-background-color: #E37272;" text="Arrival Time" />
+        </columns>
+         <effect>
+            <DropShadow height="9.21" radius="4.105" width="9.21">
+               <color>
+                  <Color red="1.0" green="0.046296294778585434" blue="0.046296294778585434" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <Button fx:id="gobackButton" alignment="CENTER" layoutX="480.0" layoutY="564.0" mnemonicParsing="false" onAction="#gobackButtonOnAction" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: none; -fx-border-color: black; -fx-border-radius: 0.3em;" text="Go Back" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="428.0" layoutY="53.0" text="AVAILABLE TRAINS" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="177.0" layoutX="30.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://t4.ftcdn.net/jpg/00/87/70/53/360_F_87705329_dQLgSkZ9oMrs70CzSIjD44cwFTEM0gMU.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="177.0" layoutX="919.0" layoutY="8.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://t4.ftcdn.net/jpg/00/87/70/53/360_F_87705329_dQLgSkZ9oMrs70CzSIjD44cwFTEM0gMU.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="570.0" text="Created By: Yehia Sharawy - 20100519">
+         <effect>
+            <DropShadow height="1.66" radius="0.7424999999999999" width="3.31" />
+         </effect></Label>
+   </children>
+</Pane>

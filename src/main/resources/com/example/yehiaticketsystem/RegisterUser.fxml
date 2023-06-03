@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yehiaticketsystem.RegisterUser">
+   <children>
+      <ImageView fitHeight="376.0" fitWidth="346.0" layoutX="134.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://t4.ftcdn.net/jpg/00/87/70/53/360_F_87705329_dQLgSkZ9oMrs70CzSIjD44cwFTEM0gMU.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="207.0" layoutY="47.0" text="User Registeration" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="129.0" text="Last Name" textFill="#f75656" />
+      <TextField fx:id="firstnameTextField" layoutX="132.0" layoutY="124.0" prefHeight="26.0" prefWidth="152.0" promptText="First Name" />
+      <Button fx:id="haveanaccountButton" layoutX="173.0" layoutY="322.0" mnemonicParsing="false" onAction="#haveanaccountButtonOnAction" style="-fx-background-color: none; -fx-border-color: #F75656; -fx-border-radius: 0.3em;" text="Already have an account? Log In" textAlignment="CENTER" textFill="#f75656">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Glow level="0.13" />
+         </effect>
+      </Button>
+      <Button fx:id="registerButton" layoutX="173.0" layoutY="271.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: none; -fx-border-color: black; -fx-border-radius: 0.3em;" text="Register">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="lastnameTextField" layoutX="373.0" layoutY="124.0" prefHeight="26.0" prefWidth="152.0" promptText="LastName" />
+      <Label layoutX="63.0" layoutY="200.0" text="Username" textFill="#f75656" />
+      <Label layoutX="307.0" layoutY="200.0" text="Password" textFill="#f75656">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="132.0" layoutY="195.0" prefHeight="26.0" prefWidth="152.0" promptText="Username" />
+      <TextField fx:id="passwordTextField" layoutX="373.0" layoutY="195.0" prefHeight="26.0" prefWidth="152.0" promptText="Password" />
+      <Label layoutX="62.0" layoutY="129.0" text="Fisrt Name" textFill="#f75656" />
+      <Label layoutX="192.0" layoutY="378.0" text="Created By: Yehia Sharawy - 20100519">
+         <effect>
+            <DropShadow height="1.66" radius="0.7424999999999999" width="3.31" />
+         </effect>
+      </Label>
+      <Button fx:id="headbackButton" layoutX="327.0" layoutY="271.0" mnemonicParsing="false" onAction="#haveanaccountButtonOnAction" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: none; -fx-border-color: black; -fx-border-radius: 0.3em;" text="Head Back!">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="registerationMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="130.0" layoutY="86.0" prefHeight="19.0" prefWidth="340.0" textAlignment="CENTER" textFill="#f75656">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow height="12.16" radius="3.3675" width="3.31">
+               <color>
+                  <Color red="0.8947368264198303" green="0.1946881115436554" blue="0.1946881115436554" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</Pane>

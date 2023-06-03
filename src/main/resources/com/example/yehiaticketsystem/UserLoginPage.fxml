@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yehiaticketsystem.UserLogin">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #E37272;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="391.0" fitWidth="228.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://images.unsplash.com/photo-1572414323397-e7918784a4b7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1287&amp;q=80" />
+               </image>
+               <effect>
+                  <GaussianBlur radius="2.54" />
+               </effect>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="82.0" text="Train Ticket" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="151.0" text="Reservation System" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="320.0" text="Created By: Yehia Sharawy - 20100519" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="56.5" fill="WHITE" layoutX="134.0" layoutY="197.0" opacity="0.76" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Line endX="56.5" fill="WHITE" layoutX="135.0" layoutY="54.0" opacity="0.76" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Circle fill="WHITE" layoutX="22.0" layoutY="54.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="22.0" layoutY="197.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="205.0" layoutY="197.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="205.0" layoutY="54.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label layoutX="14.0" layoutY="82.0" text="Yehia's" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="AvailableTrainsButton" layoutX="27.0" layoutY="261.0" mnemonicParsing="false" onAction="#availableTrainsButtonOnAction" prefHeight="37.0" prefWidth="170.0" style="-fx-background-color: white; -fx-border-radius: 5;" text="See Available Trains" textAlignment="CENTER" textFill="#f75656">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="407.0" prefWidth="332.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="30.0" layoutY="150.0" text="Username" />
+            <Label layoutX="31.0" layoutY="205.0" text="Password" />
+            <ImageView fitHeight="118.0" fitWidth="216.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://t4.ftcdn.net/jpg/00/87/70/53/360_F_87705329_dQLgSkZ9oMrs70CzSIjD44cwFTEM0gMU.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="UsernameTextfield" layoutX="103.0" layoutY="146.0" prefHeight="26.0" prefWidth="143.0" promptText="Username" />
+            <Button fx:id="LoginButton" layoutX="61.0" layoutY="253.0" mnemonicParsing="false" onAction="#loginButtonOnAction" style="-fx-background-color: #F75656; -fx-border-radius: 5;" text="LogIn" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" left="70.0" right="70.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="PasswordField" layoutX="103.0" layoutY="201.0" prefHeight="26.0" prefWidth="142.0" promptText="Password" />
+            <Label fx:id="LoginMessageLabel" alignment="CENTER" layoutX="37.0" layoutY="110.0" prefHeight="17.0" prefWidth="209.0" textAlignment="CENTER" textFill="#cd2a2a" />
+            <Button fx:id="RegisterButton" layoutX="61.0" layoutY="299.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #F75656; -fx-border-radius: 5;" text="Register" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
