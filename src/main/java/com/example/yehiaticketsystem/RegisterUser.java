@@ -10,6 +10,8 @@ import java.sql.Statement;
 
 
 public class RegisterUser {
+    public Button headbackButton;
+    public Button registerButton;
     @FXML
     private Button haveanaccountButton;
     @FXML

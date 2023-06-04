@@ -1,5 +1,7 @@
 package com.example.yehiaticketsystem;
 
+import javafx.collections.ObservableList;
+
 public class TrainSearchModel {
     String DepartureLoc, DepartureTime, ArrivalLoc, ArrivalTime;
 

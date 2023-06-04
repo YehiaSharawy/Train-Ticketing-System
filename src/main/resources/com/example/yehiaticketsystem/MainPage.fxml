@@ -87,14 +87,14 @@
             </DropShadow>
          </effect>
       </Label>
-      <Button fx:id="bookButton" alignment="CENTER" layoutX="182.0" layoutY="602.0" mnemonicParsing="false" onAction="#bookButtonOnAction" style="-fx-background-color: none; -fx-border-color: red; -fx-border-radius: 0.3em;" text="Book Now" textFill="RED">
+      <Button fx:id="bookButton" alignment="CENTER" layoutX="183.0" layoutY="584.0" mnemonicParsing="false" onAction="#bookButtonOnAction" style="-fx-background-color: none; -fx-border-color: #7eff00; -fx-border-radius: 0.3em;" text="Book Now" textAlignment="CENTER" textFill="#7eff00">
          <font>
             <Font size="18.0" />
          </font>
          <effect>
-            <DropShadow radius="7.0525" width="9.21">
+            <DropShadow height="15.11" radius="5.58" width="9.21">
                <color>
-                  <Color red="1.0" />
+                  <Color red="0.723052442073822" green="1.0" />
                </color>
             </DropShadow>
          </effect>
@@ -121,5 +121,17 @@
          </effect>
       </Label>
       <Label fx:id="labelMessage" alignment="CENTER" layoutX="114.0" layoutY="188.0" prefHeight="17.0" prefWidth="238.0" textAlignment="CENTER" textFill="#00ed83" />
+      <Button fx:id="availableTrainsButton" alignment="CENTER" layoutX="147.0" layoutY="632.0" mnemonicParsing="false" onAction="#availableTrainsButtonOnAction" style="-fx-background-color: none; -fx-border-color: ffcc00; -fx-border-radius: 0.3em;" text="See Available Trains" textAlignment="CENTER" textFill="#ffcc00">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="15.11" radius="5.58" width="9.21">
+               <color>
+                  <Color red="1.0" green="0.39936408400535583" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
    </children>
 </Pane>

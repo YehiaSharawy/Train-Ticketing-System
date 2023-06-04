@@ -16,6 +16,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class UserLogin extends MainPage{
+    public Button AvailableTrainsButton;
+    public Button RegisterButton;
     @FXML
     private Label LoginMessageLabel;
     @FXML
