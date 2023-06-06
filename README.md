@@ -1,6 +1,13 @@
 # Train-Ticketing-System
-I designed a Train Reservation System from the ground up which will help the passenger to book tickets.
-This project phase 2 demonstrates a UML diagram about all the classes and interfaces that I used and a detailed walkthrough of the program itself.
+This is a JavaFX application designed to be a Train Ticket Reservation System which will help the client to book tickets by choosing there departure and arrival location as well as their desired number of seats.
+This project contains a UML diagram about all the classes and interfaces that I used and a detailed walkthrough of the program itself.
+
+## Tech Stack
+* Java
+* JavaFX
+* Scene builder
+* MySQL Database Management System
+
 ## UML
 <img width="1136" alt="UML phase2" src="https://github.com/YehiaSharawy/Train-Ticketing-System/assets/65984199/d77579c0-6daf-4936-8a49-2f8c103bbf3d">
 
